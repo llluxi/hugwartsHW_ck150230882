@@ -1,0 +1,16 @@
+update:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token=${token}"
+  "json":
+    "userid": ${tagid}
+    "name": ${tagname}
+
+get:
+  "method": "get"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/list?access_token=${token}"
+
+create:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/create?access_token=${token}"
+  "json":
+    "tagname": ${tagname}

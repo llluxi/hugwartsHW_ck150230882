@@ -14,3 +14,7 @@ create:
   "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/create?access_token=${token}"
   "json":
     "tagname": ${tagname}
+
+delete:
+  "method": "get"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/delete?access_token=${token}&tagid=${tagid}"
